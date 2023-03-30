@@ -1,0 +1,203 @@
+/* 重置默认样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 设置页面背景颜色和字体 */
+body {
+  background-color: #f8f8f8;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* 设置标题样式 */
+h1,
+h2,
+h3 {
+  font-weight: normal;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+/* 设置导航栏样式 */
+nav {
+  background-color: #333;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+nav li {
+  margin-right: 1em;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5em;
+  border-radius: 0.5em;
+}
+
+nav a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/* 设置主页样式 */
+.hero {
+  background-image:url("sky.png");
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 0.2em;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+/* 设置“关于我”和“项目”部分的样式 */
+.about-me,
+.projects {
+  padding: 2em;
+  background-color: #fff;
+  margin-bottom: 2em;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.projects ul {
+  list-style: none;
+}
+
+.projects li {
+  margin-bottom: 1em;
+}
+
+.projects a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.projects a:hover {
+  text-decoration: underline;
+}
+
+/* 设置“联系我”部分的样式 */
+.contact {
+  padding: 2em;
+  background-color: #fff;
+  margin-bottom: 2em;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  border: 1px solid #ccc;
+  margin-bottom: 1em;
+}
+
+.contact button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 0.5em
+}
+/* 当鼠标悬停在提交按钮上时，改变背景颜色和颜色 */
+.contact button[type="submit"]:hover {
+background-color: #fff;
+color: #333;
+cursor: pointer;
+}
+
+/* 当用户在表单中输入错误时，将边框颜色设置为红色 */
+.contact input:invalid,
+.contact textarea:invalid {
+border-color: #ff0000;
+}
+
+/* 隐藏“必填”文本，然后在标签后面添加一个红色星号来指示必填字段 */
+.contact label span {
+display: none;
+}
+
+.contact label[for="name"] span,
+.contact label[for="email"] span,
+.contact label[for="message"] span {
+display: inline-block;
+color: #ff0000;
+margin-left: 0.5em;
+}
+
+/* 设置页脚的样式 */
+footer {
+background-color: #333;
+color: #fff;
+padding: 1em;
+text-align: center;
+}
+
+footer p {
+margin-bottom: 0.5em;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+nav ul {
+flex-direction: column;
+}
+
+nav li {
+margin: 0.5em 0;
+}
+
+.hero {
+height: auto;
+padding: 2em;
+}
+
+.about-me,
+.projects,
+.contact {
+padding: 1em;
+}
+}

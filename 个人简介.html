@@ -1,0 +1,88 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>个人简介</title>
+    <link rel="stylesheet" href="sty.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">首页</a></li>
+          <li><a href="#">比较简单的简介</a></li>
+          <li><a href="#">不怎么简单的简介</a></li>
+          <li><a href="#">联系我</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h1>王怡璇</h1>
+        <p>南开大学新闻与传播学院</p>
+      </section>
+      <marquee align="middle"
+               bgcolor="#87cefa"
+               direction="left"
+               behavior="scroll"
+               height="30"
+               scrollamount="4"
+               scrolldelay="4"
+               οnmοuseοver="this.stop()"
+               οnmοuseοut="this.start()"
+               width="100%">
+        <b>你好 hello Привет Bonjour hej こんにちは Namaste hola Saluton 吃了吗您</b>
+      </marquee>
+      <section class="about-me">
+        <h2>比较简单的简介</h2>
+        <p>我叫王怡璇，来自中国河北省秦皇岛市，现就读于南开大学新闻与传播学院</p>
+      </section>
+      <section class="projects">
+        <h2>不怎么简单的简介</h2>
+        <ul>
+          <li>
+            <a href="#">关于我的</a>
+            <p>出去玩的，去过内蒙古/敦煌/拉萨/日喀则/上海/北京/西安/杭州/南京/举不过来了，最喜欢西藏
+              <br>弹贝斯的，喜欢弹一点小funk，因为好弹而且看起来很帅；正在学弹钢琴，但是学不好被老师骂很委屈
+              <br>打游戏的，死亡空间/史丹利的寓言/逃生/valorant/古墓丽影/举不过来了，最喜欢Disco Elysium
+              <br>看点书的，在看加缪/黑塞/阿多尼斯，没有最喜欢的书大家都很好看；还在看纸牌屋/能流利背诵甄嬛传的台词；恐怖片百科全书（自封）
+              </p>
+          </li>
+          <li>
+            <a href="#">放点照片</a>
+            <p>
+              <img src="tree.jpg" width="200" height="260">是在海边很开心的乱走的我<img src="skate.jpg" width="200" height="260">是滑雪的我，学单板同样也是因为看起来很帅
+              <br> <img src="cat.jpg" width="200" height="260">是我最喜欢的猫猫名字叫毛<img src="130f964916632398d8ca93f45f45460.jpg" width="200" height="260">是我上过校园集市热门的小狗（名字就叫小狗）
+
+            </p>
+          </li>
+          <li>
+            <a href="#">才艺展示</a>
+            <p>
+             使用python写的爱心代码(npy写的)+使用AE制作的流动爱心特效(我做的)
+              <br> <img src="hearts.gif" width="480" height="248" >
+              <br>一段皇后乐队的Another one bites the dust（真的是献丑但是只录了这段所以还是要献）
+              <br><video width="520" height="248" controls autoplay>
+              <source src="bass.mp4"  type="video/ogg">
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="contact">
+        <h2>联系我</h2>
+        <form action="#">
+          <label for="name">姓名</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">邮箱</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">留言</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">发送</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 - 王怡璇</p>
+    </footer>
+  </body>
+</html>
